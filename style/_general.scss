@@ -10,6 +10,11 @@ body {
     width: 100%;
     min-height: 100vw;
     font-family: Nunito Sans, sans-serif;
+    position: relative;
+
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
 }
 
 img {
