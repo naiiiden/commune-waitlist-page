@@ -8,9 +8,20 @@
 
 body {
   width: 100%;
-  min-height: 100vw;
+  min-height: 100vh;
   font-family: Nunito Sans, sans-serif;
   position: relative;
+  background: #F6F9FE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 img {
@@ -19,7 +30,7 @@ img {
 
 header {
   width: 100%;
-  padding: 3rem 1.25rem;
+  padding: 2rem 1.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,14 +98,16 @@ header nav ul.show {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.5rem;
+  -webkit-backdrop-filter: blur(1rem);
+          backdrop-filter: blur(1rem);
 }
 
 @media screen and (min-width: 768px) {
   header {
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
   }
   header .hamburger {
-    padding: 3rem 4rem;
+    padding: 2rem 4rem;
   }
 }
 
@@ -113,6 +126,216 @@ header nav ul.show {
   }
   header nav ul li a.waitlist {
     padding: 1rem;
+  }
+}
+
+main {
+  padding: 0 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .75rem;
+}
+
+main .illustration {
+  display: none;
+}
+
+main .text_form_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .75rem;
+}
+
+main article {
+  border-radius: 3rem;
+  padding: .25rem .75rem;
+  text-align: center;
+  background: #372865;
+}
+
+main article p {
+  color: #CCC1E6;
+}
+
+main article a {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+main h1 {
+  color: #372865;
+  text-align: center;
+}
+
+main p {
+  color: #545454;
+  text-align: center;
+  font-size: .9rem;
+}
+
+main form {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: .5rem;
+}
+
+main form .email {
+  padding: .75rem;
+  border: none;
+  border: 1px solid #d6d2d2;
+  border-radius: 5px;
+}
+
+main form .email ::-webkit-input-placeholder {
+  font-family: Nunito Sans;
+}
+
+main form .email :-ms-input-placeholder {
+  font-family: Nunito Sans;
+}
+
+main form .email ::-ms-input-placeholder {
+  font-family: Nunito Sans;
+}
+
+main form .email ::placeholder {
+  font-family: Nunito Sans;
+}
+
+main form .submit {
+  padding: .75rem;
+  background: #372865;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    font-size: 1.75rem;
+  }
+  main .text_form_container {
+    gap: 1rem;
+  }
+  main article p {
+    font-size: 1.1rem;
+  }
+  main h1 {
+    width: 35rem;
+  }
+  main p {
+    width: 36rem;
+    font-size: 1.1rem;
+  }
+  main form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main form .email {
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 0 4rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  main .text_form_container {
+    width: 65%;
+  }
+  main .text_form_container article {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  main .text_form_container article p {
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  main .text_form_container h1 {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: start;
+    font-size: 3rem;
+    width: 100%;
+  }
+  main .text_form_container p {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    text-align: start;
+    font-size: 1.2rem;
+    width: 100%;
+  }
+  main .text_form_container form {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  main .text_form_container form .email {
+    width: 50%;
+  }
+  main .text_form_container form .submit {
+    width: 20%;
+  }
+  main .illustration {
+    display: block;
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  main .text_form_container {
+    width: 50%;
+  }
+  main .text_form_container article p {
+    font-size: 1.3rem;
+  }
+  main .text_form_container h1 {
+    font-size: 4rem;
+  }
+  main .text_form_container p {
+    font-size: 1.3rem;
+  }
+  main .illustration {
+    width: 35%;
   }
 }
 /*# sourceMappingURL=style.css.map */
