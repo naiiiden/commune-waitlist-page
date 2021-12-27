@@ -112,7 +112,7 @@ main {
 
 @media screen and (min-width: 1024px) {
     main {
-        padding: 0 4rem;
+        padding: 4rem 4rem;
         flex-direction: row;
         font-size: 1rem;
         align-items: center;
@@ -121,7 +121,7 @@ main {
 
 
         .text_form_container {
-            width: 65%;
+            width: 60%;
 
             article {
                 align-self: flex-start;
@@ -129,21 +129,21 @@ main {
                 p {
                     width: 100%;
                     text-align: center;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
                 }
             }
 
             h1 {
                 align-self: flex-start;
                 text-align: start;
-                font-size: 3rem;
+                font-size: 2.75rem;
                 width: 100%;
             }
 
             p {
                 align-self: flex-start;
                 text-align: start;
-                font-size: 1.2rem;
+                font-size: 1.1rem;
                 width: 100%;
             }
 
@@ -155,14 +155,15 @@ main {
                 }
 
                 .submit {
-                    width: 20%;
+                    width: 25%;
+                    font-size: 1rem;
                 }
             }
         }
 
         .illustration {
             display: block;
-            width: 30%;
+            width: 37.5%;
         }
     }
 }
@@ -170,7 +171,8 @@ main {
 @media screen and (min-width: 1440px) {
     main {
         .text_form_container {
-            width: 50%;
+            width: 60%;
+            gap: 1.25rem;
 
             article {
                 p {
@@ -180,15 +182,27 @@ main {
 
             h1 {
                 font-size: 4rem;
+                line-height: 1.25;
             }
 
             p {
                 font-size: 1.3rem;
             }
+
+            form {
+                .email {
+                    padding: 1.25rem;
+                }
+
+                .submit {
+                    width: 25%;
+                    padding: 1.25rem;
+                }
+            }
         }
 
         .illustration {
-            width: 35%;
+            width: 30%;
         }
     }
 }

@@ -129,6 +129,12 @@ header nav ul.show {
   }
 }
 
+@media screen and (min-width: 1440px) {
+  header nav ul li a {
+    font-size: 1.15rem;
+  }
+}
+
 main {
   padding: 0 1.25rem;
   display: -webkit-box;
@@ -264,7 +270,7 @@ main form .submit {
 
 @media screen and (min-width: 1024px) {
   main {
-    padding: 0 4rem;
+    padding: 4rem 4rem;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -279,7 +285,7 @@ main form .submit {
     width: 100%;
   }
   main .text_form_container {
-    width: 65%;
+    width: 60%;
   }
   main .text_form_container article {
     -ms-flex-item-align: start;
@@ -288,20 +294,20 @@ main form .submit {
   main .text_form_container article p {
     width: 100%;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   main .text_form_container h1 {
     -ms-flex-item-align: start;
         align-self: flex-start;
     text-align: start;
-    font-size: 3rem;
+    font-size: 2.75rem;
     width: 100%;
   }
   main .text_form_container p {
     -ms-flex-item-align: start;
         align-self: flex-start;
     text-align: start;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     width: 100%;
   }
   main .text_form_container form {
@@ -313,29 +319,39 @@ main form .submit {
     width: 50%;
   }
   main .text_form_container form .submit {
-    width: 20%;
+    width: 25%;
+    font-size: 1rem;
   }
   main .illustration {
     display: block;
-    width: 30%;
+    width: 37.5%;
   }
 }
 
 @media screen and (min-width: 1440px) {
   main .text_form_container {
-    width: 50%;
+    width: 60%;
+    gap: 1.25rem;
   }
   main .text_form_container article p {
     font-size: 1.3rem;
   }
   main .text_form_container h1 {
     font-size: 4rem;
+    line-height: 1.25;
   }
   main .text_form_container p {
     font-size: 1.3rem;
   }
+  main .text_form_container form .email {
+    padding: 1.25rem;
+  }
+  main .text_form_container form .submit {
+    width: 25%;
+    padding: 1.25rem;
+  }
   main .illustration {
-    width: 35%;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */
