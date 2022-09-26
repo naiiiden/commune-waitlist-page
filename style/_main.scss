@@ -1,4 +1,4 @@
-main {
+.main {
     padding: 0 1.25rem;
     display: flex;
     flex-direction: column;
@@ -74,7 +74,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    main {
+    .main {
 
         // width: 70%;
         font-size: 1.75rem;
@@ -111,7 +111,7 @@ main {
 }
 
 @media screen and (min-width: 1024px) {
-    main {
+    .main {
         padding: 2rem 4rem;
         flex-direction: row;
         font-size: 1rem;
@@ -169,7 +169,7 @@ main {
 }
 
 @media screen and (min-width: 1440px) {
-    main {
+    .main {
         .text_form_container {
             width: 60%;
             gap: 1.25rem;
